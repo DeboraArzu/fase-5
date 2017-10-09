@@ -535,7 +535,7 @@ namespace WFA_COMPILADORES_AJ
             if (m2.Success)
             {
                 //pre arreglo  
-                string pattern2 = @"(start\=)";
+                string pattern2 = @"(start((\s|\t)*)\=)";
                 string replacement2 = "<start> -> ";
                 Regex rgx2 = new Regex(pattern2, RegexOptions.IgnoreCase);
                 string result = rgx2.Replace(this.texto, replacement2);
