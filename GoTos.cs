@@ -722,27 +722,27 @@ namespace WFA_COMPILADORES_AJ
             return Gramatica.ListaNoTerminal[(-n) - 1].NT;
         }
 
-        public void AgregarLA(List<int> la, DatosTabla1 querner, int p)
+        public void AgregarLA(List<int> la, DatosTabla1 kernel, int p)
         {
             for (int i = 0; i < la.Count; i++)
             {
-                if (!querner.LA[p].Contains(la[i]))
+                if (!kernel.LA[p].Contains(la[i]))
                 {
-                    querner.LA[p].Add(la[i]);
+                    kernel.LA[p].Add(la[i]);
                 }
             }
         }
 
-        public void AgregarFirstLockAheadNucleo(DatosTabla1 querner, int lan, int nt)
+        public void AgregarFirstLockAheadNucleo(DatosTabla1 kernel, int lan, int nt)
         {
             for (int i = 0; i < Gramatica.ListaNoTerminal[nt].First.Count; i++)
             {
                 int elemento = Gramatica.ListaNoTerminal[nt].First[i];
-                if (!querner.LAN[lan].Contains(elemento))
+                if (!kernel.LAN[lan].Contains(elemento))
                 {
                     if (elemento != 0)
                     {
-                        querner.LAN[lan].Add(elemento);
+                        kernel.LAN[lan].Add(elemento);
                     }
                 }
             }
