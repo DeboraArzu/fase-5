@@ -31,6 +31,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.cARGARDOCUMENTOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aNALIZARToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rchtb_Texto = new System.Windows.Forms.RichTextBox();
             this.txtMensaje = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -57,7 +58,6 @@
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.btnGenerar = new System.Windows.Forms.Button();
-            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducciones)).BeginInit();
@@ -98,6 +98,14 @@
             this.aNALIZARToolStripMenuItem.Text = "Analizar";
             this.aNALIZARToolStripMenuItem.Click += new System.EventHandler(this.aNALIZARToolStripMenuItem_Click);
             // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.Image = global::WFA_COMPILADORES_AJ.Resource1.if_17_330399;
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(61, 24);
+            this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
+            // 
             // rchtb_Texto
             // 
             this.rchtb_Texto.BackColor = System.Drawing.SystemColors.MenuText;
@@ -119,7 +127,7 @@
             this.txtMensaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMensaje.ForeColor = System.Drawing.Color.White;
             this.txtMensaje.Location = new System.Drawing.Point(9, 501);
-            this.txtMensaje.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMensaje.Margin = new System.Windows.Forms.Padding(2);
             this.txtMensaje.Name = "txtMensaje";
             this.txtMensaje.Size = new System.Drawing.Size(834, 20);
             this.txtMensaje.TabIndex = 2;
@@ -145,13 +153,12 @@
             this.btnSave.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnSave.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnSave.Location = new System.Drawing.Point(922, 471);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(81, 36);
             this.btnSave.TabIndex = 6;
             this.btnSave.Text = "Generar .DAT";
             this.btnSave.UseVisualStyleBackColor = false;
-            this.btnSave.Visible = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // tabPage3
@@ -159,9 +166,9 @@
             this.tabPage3.BackColor = System.Drawing.Color.Black;
             this.tabPage3.Controls.Add(this.dgvProducciones);
             this.tabPage3.Location = new System.Drawing.Point(4, 26);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage3.Size = new System.Drawing.Size(544, 388);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Tabla Producciones";
@@ -181,7 +188,7 @@
             this.dgvProducciones.EnableHeadersVisualStyles = false;
             this.dgvProducciones.GridColor = System.Drawing.Color.CornflowerBlue;
             this.dgvProducciones.Location = new System.Drawing.Point(4, 4);
-            this.dgvProducciones.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvProducciones.Margin = new System.Windows.Forms.Padding(2);
             this.dgvProducciones.Name = "dgvProducciones";
             this.dgvProducciones.RowHeadersVisible = false;
             this.dgvProducciones.RowTemplate.Height = 24;
@@ -218,7 +225,7 @@
             this.tabPage2.Controls.Add(this.dtgvNoTerminalTable);
             this.tabPage2.Location = new System.Drawing.Point(4, 26);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(544, 388);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Tabla No Terminal";
@@ -238,7 +245,7 @@
             this.dtgvNoTerminalTable.EnableHeadersVisualStyles = false;
             this.dtgvNoTerminalTable.GridColor = System.Drawing.Color.CornflowerBlue;
             this.dtgvNoTerminalTable.Location = new System.Drawing.Point(5, 5);
-            this.dtgvNoTerminalTable.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtgvNoTerminalTable.Margin = new System.Windows.Forms.Padding(2);
             this.dtgvNoTerminalTable.Name = "dtgvNoTerminalTable";
             this.dtgvNoTerminalTable.RowHeadersVisible = false;
             this.dtgvNoTerminalTable.RowTemplate.Height = 24;
@@ -275,7 +282,7 @@
             this.tabPage1.Controls.Add(this.TABLA1);
             this.tabPage1.Location = new System.Drawing.Point(4, 26);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(544, 388);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Tabla Tokens";
@@ -293,7 +300,7 @@
             this.TABLA1.EnableHeadersVisualStyles = false;
             this.TABLA1.GridColor = System.Drawing.Color.CornflowerBlue;
             this.TABLA1.Location = new System.Drawing.Point(5, 5);
-            this.TABLA1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TABLA1.Margin = new System.Windows.Forms.Padding(2);
             this.TABLA1.Name = "TABLA1";
             this.TABLA1.RowHeadersVisible = false;
             this.TABLA1.RowTemplate.Height = 24;
@@ -339,9 +346,9 @@
             this.tabPage4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tabPage4.Controls.Add(this.richTextBox1);
             this.tabPage4.Location = new System.Drawing.Point(4, 26);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage4.Size = new System.Drawing.Size(544, 388);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Estados";
@@ -351,7 +358,7 @@
             this.richTextBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.richTextBox1.ForeColor = System.Drawing.SystemColors.Window;
             this.richTextBox1.Location = new System.Drawing.Point(0, 0);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(547, 392);
             this.richTextBox1.TabIndex = 0;
@@ -362,22 +369,13 @@
             this.btnGenerar.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnGenerar.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnGenerar.Location = new System.Drawing.Point(1007, 470);
-            this.btnGenerar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGenerar.Margin = new System.Windows.Forms.Padding(2);
             this.btnGenerar.Name = "btnGenerar";
             this.btnGenerar.Size = new System.Drawing.Size(81, 36);
             this.btnGenerar.TabIndex = 8;
             this.btnGenerar.Text = "Generar .TOK";
             this.btnGenerar.UseVisualStyleBackColor = false;
-            this.btnGenerar.Visible = false;
             this.btnGenerar.Click += new System.EventHandler(this.btnGenerar_Click);
-            // 
-            // salirToolStripMenuItem
-            // 
-            this.salirToolStripMenuItem.Image = global::WFA_COMPILADORES_AJ.Resource1.if_17_330399;
-            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(61, 24);
-            this.salirToolStripMenuItem.Text = "Salir";
-            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
             // FRMPRINCIPAL
             // 

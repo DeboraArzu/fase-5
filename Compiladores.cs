@@ -48,7 +48,6 @@ namespace WFA_COMPILADORES_AJ
             }
         }
 
-
         private void aNALIZARToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (rchtb_Texto.Text.Trim() != "")
@@ -83,10 +82,13 @@ namespace WFA_COMPILADORES_AJ
         }
         public void Imprimir_estados(List<string> d)
         {
+            TextWriter sw = new StreamWriter("C:\\Users\\Debora\\Desktop\\GOTO.txt");
             foreach (string s in d)
             {
                 richTextBox1.Text += s + "\n";
+                sw.WriteLine(s + "\n");
             }
+            sw.Close();
         }
         private void FRMPRINCIPAL_Load(object sender, EventArgs e)
         {
@@ -351,6 +353,10 @@ namespace WFA_COMPILADORES_AJ
                 }
             }
             richTextBox1.Text = texto;
+            //
+            TextWriter sw = new StreamWriter("C:\\Users\\Debora\\Desktop\\GOTO.txt");
+            sw.WriteLine(texto);
+            sw.Close();
         }
 
         public string ObtenerListaParseo(List<int> lista)
