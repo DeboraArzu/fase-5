@@ -62,7 +62,6 @@ namespace WFA_COMPILADORES_AJ
                 {
                     //Se pinta todo el texto de verde para indicar que esta correcto
                     rchtb_Texto.SelectAll();
-                    rchtb_Texto.SelectionBackColor = Color.Green;
                     gra.CalcularFirst();
                     CargarTablas();
                     go.Parseo();
