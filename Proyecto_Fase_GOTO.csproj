@@ -106,6 +106,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="if_anonymous_395266.ico" />
+    <None Include="Resources\if_file_documents-11_854152.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

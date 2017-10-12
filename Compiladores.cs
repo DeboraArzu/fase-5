@@ -13,7 +13,7 @@ namespace WFA_COMPILADORES_AJ
 {
     public partial class FRMPRINCIPAL : Form
     {
-        string texto = "";
+        string texto, parseo = "";
         public FRMPRINCIPAL()
         {
             InitializeComponent();
@@ -355,9 +355,7 @@ namespace WFA_COMPILADORES_AJ
             }
             richTextBox1.Text = texto;
             //
-            TextWriter sw = new StreamWriter("C:\\Users\\Debora\\Desktop\\GOTO.txt");
-            sw.WriteLine(texto);
-            sw.Close();
+            parseo = richTextBox1.Text;
         }
 
         public string ObtenerListaParseo(List<int> lista)
@@ -603,6 +601,17 @@ namespace WFA_COMPILADORES_AJ
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void guardarGOTOToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog savefile = new SaveFileDialog();
+            if (savefile.ShowDialog() == DialogResult.OK)
+            {
+                TextWriter sw = new StreamWriter(savefile.FileName);
+                sw.WriteLine(parseo);
+                sw.Close();
+            }
         }
     }
 }

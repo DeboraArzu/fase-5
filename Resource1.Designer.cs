@@ -83,6 +83,16 @@ namespace WFA_COMPILADORES_AJ {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap if_file_documents_11_854152 {
+            get {
+                object obj = ResourceManager.GetObject("if_file_documents_11_854152", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap if_magnifier_data_532758 {
             get {
                 object obj = ResourceManager.GetObject("if_magnifier_data_532758", resourceCulture);

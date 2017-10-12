@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.cARGARDOCUMENTOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aNALIZARToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rchtb_Texto = new System.Windows.Forms.RichTextBox();
             this.txtMensaje = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -58,6 +55,10 @@
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.btnGenerar = new System.Windows.Forms.Button();
+            this.guardarGOTOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cARGARDOCUMENTOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aNALIZARToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducciones)).BeginInit();
@@ -75,36 +76,13 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cARGARDOCUMENTOToolStripMenuItem,
             this.aNALIZARToolStripMenuItem,
+            this.guardarGOTOToolStripMenuItem,
             this.salirToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1147, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // cARGARDOCUMENTOToolStripMenuItem
-            // 
-            this.cARGARDOCUMENTOToolStripMenuItem.Image = global::WFA_COMPILADORES_AJ.Resource1.if_file_documents_09_854153;
-            this.cARGARDOCUMENTOToolStripMenuItem.Name = "cARGARDOCUMENTOToolStripMenuItem";
-            this.cARGARDOCUMENTOToolStripMenuItem.Size = new System.Drawing.Size(140, 24);
-            this.cARGARDOCUMENTOToolStripMenuItem.Text = "Cargar Documento";
-            this.cARGARDOCUMENTOToolStripMenuItem.Click += new System.EventHandler(this.cARGARDOCUMENTOToolStripMenuItem_Click);
-            // 
-            // aNALIZARToolStripMenuItem
-            // 
-            this.aNALIZARToolStripMenuItem.Image = global::WFA_COMPILADORES_AJ.Resource1.if_magnifier_data_532758;
-            this.aNALIZARToolStripMenuItem.Name = "aNALIZARToolStripMenuItem";
-            this.aNALIZARToolStripMenuItem.Size = new System.Drawing.Size(81, 24);
-            this.aNALIZARToolStripMenuItem.Text = "Analizar";
-            this.aNALIZARToolStripMenuItem.Click += new System.EventHandler(this.aNALIZARToolStripMenuItem_Click);
-            // 
-            // salirToolStripMenuItem
-            // 
-            this.salirToolStripMenuItem.Image = global::WFA_COMPILADORES_AJ.Resource1.if_17_330399;
-            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(61, 24);
-            this.salirToolStripMenuItem.Text = "Salir";
-            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
             // rchtb_Texto
             // 
@@ -377,6 +355,38 @@
             this.btnGenerar.UseVisualStyleBackColor = false;
             this.btnGenerar.Click += new System.EventHandler(this.btnGenerar_Click);
             // 
+            // guardarGOTOToolStripMenuItem
+            // 
+            this.guardarGOTOToolStripMenuItem.Image = global::WFA_COMPILADORES_AJ.Resource1.if_file_documents_11_854152;
+            this.guardarGOTOToolStripMenuItem.Name = "guardarGOTOToolStripMenuItem";
+            this.guardarGOTOToolStripMenuItem.Size = new System.Drawing.Size(115, 24);
+            this.guardarGOTOToolStripMenuItem.Text = "Guardar GOTO";
+            this.guardarGOTOToolStripMenuItem.Click += new System.EventHandler(this.guardarGOTOToolStripMenuItem_Click);
+            // 
+            // cARGARDOCUMENTOToolStripMenuItem
+            // 
+            this.cARGARDOCUMENTOToolStripMenuItem.Image = global::WFA_COMPILADORES_AJ.Resource1.if_file_documents_09_854153;
+            this.cARGARDOCUMENTOToolStripMenuItem.Name = "cARGARDOCUMENTOToolStripMenuItem";
+            this.cARGARDOCUMENTOToolStripMenuItem.Size = new System.Drawing.Size(140, 24);
+            this.cARGARDOCUMENTOToolStripMenuItem.Text = "Cargar Documento";
+            this.cARGARDOCUMENTOToolStripMenuItem.Click += new System.EventHandler(this.cARGARDOCUMENTOToolStripMenuItem_Click);
+            // 
+            // aNALIZARToolStripMenuItem
+            // 
+            this.aNALIZARToolStripMenuItem.Image = global::WFA_COMPILADORES_AJ.Resource1.if_magnifier_data_532758;
+            this.aNALIZARToolStripMenuItem.Name = "aNALIZARToolStripMenuItem";
+            this.aNALIZARToolStripMenuItem.Size = new System.Drawing.Size(81, 24);
+            this.aNALIZARToolStripMenuItem.Text = "Analizar";
+            this.aNALIZARToolStripMenuItem.Click += new System.EventHandler(this.aNALIZARToolStripMenuItem_Click);
+            // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.Image = global::WFA_COMPILADORES_AJ.Resource1.if_17_330399;
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(61, 24);
+            this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
+            // 
             // FRMPRINCIPAL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -442,6 +452,7 @@
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem guardarGOTOToolStripMenuItem;
     }
 }
 

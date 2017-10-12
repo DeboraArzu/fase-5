@@ -124,6 +124,9 @@
   <data name="if_file_documents_09_854153" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\if_file_documents-09_854153.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="if_file_documents_11_854152" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\if_file_documents-11_854152.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="if_magnifier_data_532758" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\if_magnifier-data_532758.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
