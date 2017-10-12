@@ -60,7 +60,6 @@ namespace WFA_COMPILADORES_AJ
                 Console.WriteLine(texto);
                 if (gra.AnalizarTexto(texto.ToLower()))
                 {
-                    //Se pinta todo el texto de verde para indicar que esta correcto
                     rchtb_Texto.SelectAll();
                     gra.CalcularFirst();
                     CargarTablas();
@@ -70,9 +69,8 @@ namespace WFA_COMPILADORES_AJ
                 }
                 else
                 {
-                    //Se pinta de rojo hasta donde se detecto el error
                     rchtb_Texto.Select(0, gra.GetPosicionError());
-                    rchtb_Texto.SelectionBackColor = Color.Red;
+                    txtMensaje.BackColor = Color.Red;
                     txtMensaje.Text = gra.GetMensajeError();
                 }
             }

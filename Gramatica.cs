@@ -832,7 +832,7 @@ namespace WFA_COMPILADORES_AJ
             if (Char.IsLetter(texto[n]))
             {
                 string palabra = ObtenerPalabra(texto, n);
-                if (palabra.ToLower() == "comments")
+                if (palabra.ToLower() == "comments" || palabra.ToLower() == "comentario")
                 {
                     comment = true;
                     return DefinirComentario(texto, palabra.Length + n);
@@ -953,8 +953,6 @@ namespace WFA_COMPILADORES_AJ
             return EstablecerError(PosicionActual + n, "Error en la definición del Comment.");
         }
 
-        //Metodo para analizar keywords
-
         public bool DefinirKeyword(string texto, int n)
         {
             n = SaltarEspacios(texto, n);
@@ -1022,9 +1020,6 @@ namespace WFA_COMPILADORES_AJ
             }
             return EstablecerError(PosicionActual, "Error en la definición del Keyword.");
         }
-
-
-        //Metodo para Definir Tokens
 
         public bool ValidarExpresion(int n, string texto, int c)
         {
@@ -1387,7 +1382,6 @@ namespace WFA_COMPILADORES_AJ
             }
         }
 
-        //Metodo para Definir Operadores
         public bool DefinirOperador(string texto, int n)
         {
             if (Char.IsLetter(texto[n]))
@@ -1546,7 +1540,6 @@ namespace WFA_COMPILADORES_AJ
             return false;
         }
 
-        //Metodos para Definir Conjuntos
         public int ObtenerChr(int n, string texto)
         {
             if ((n + 2) < texto.Length)
@@ -2318,10 +2311,5 @@ namespace WFA_COMPILADORES_AJ
             }
             return false;
         }
-
-        //-----------------------------------------------Fase 6-----------------------------------------------//
-
-
-
     }
 }
