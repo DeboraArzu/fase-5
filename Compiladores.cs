@@ -57,7 +57,8 @@ namespace WFA_COMPILADORES_AJ
                 rchtb_Texto.SelectionBackColor = Color.Black;
                 texto = rchtb_Texto.Text;
                 fix();
-                if (gra.AnalizarTexto(texto))
+                Console.WriteLine(texto);
+                if (gra.AnalizarTexto(texto.ToLower()))
                 {
                     //Se pinta todo el texto de verde para indicar que esta correcto
                     rchtb_Texto.SelectAll();
@@ -419,7 +420,7 @@ namespace WFA_COMPILADORES_AJ
             {
                 string pattern = @"tokens";
                 string replacement = "";
-                Regex rgx = new Regex(pattern);
+                Regex rgx = new Regex(pattern, RegexOptions.IgnoreCase);
                 string result = rgx.Replace(texto, replacement);
                 this.texto = "";
                 this.texto = result;
@@ -432,7 +433,7 @@ namespace WFA_COMPILADORES_AJ
             {
                 string pattern = @"sets";
                 string replacement = "tokens";
-                Regex rgx = new Regex(pattern);
+                Regex rgx = new Regex(pattern, RegexOptions.IgnoreCase);
                 string result = rgx.Replace(texto, replacement);
                 texto = result;
             }
@@ -532,7 +533,7 @@ namespace WFA_COMPILADORES_AJ
                 return;
             }
 
-            string pat2 = @"(start\=)";
+            string pat2 = @"(start((\s|\t)*)\=)";
             // Instantiate the regular expression object.
             Regex r2 = new Regex(pat2, RegexOptions.IgnoreCase);
             // Match the regular expression pattern against a text string.

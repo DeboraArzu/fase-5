@@ -260,7 +260,7 @@ namespace WFA_COMPILADORES_AJ
                                 CHR = Comillas = Apostrofe = false;
                                 rango[0] = rango[1] = -1;
                                 int f = ObtenerFinalConjunto(texto);
-                                ListaConjuntos.Add(palabra);
+                                ListaConjuntos.Add(palabra.ToLower());
                                 if (DefinirConjunto(texto, n + 1, f))
                                 {
                                     PosicionActual += NuevaDefinicion + 1;
@@ -1039,7 +1039,7 @@ namespace WFA_COMPILADORES_AJ
                             {
                                 if ((n + 2) < texto.Length)
                                 {
-                                    if (texto[n + 2] == '\'' && texto[n + 1] != '\'')
+                                    if (texto[n + 2] =='\'' && texto[n + 1] != '\'')
                                     {
                                         valor = true;
                                         UtilizacionPipe();
@@ -1051,6 +1051,8 @@ namespace WFA_COMPILADORES_AJ
                                         return ValidarExpresion(n + 3, texto, c);
                                     }
                                 }
+                                char t = texto[n + 2];
+                                char t2 = texto[n + 1];
                                 return EstablecerError(PosicionActual + n, "La definición del token es incorrecta.");
                             }
                         case '\"':
@@ -1288,7 +1290,7 @@ namespace WFA_COMPILADORES_AJ
                                     {
                                         return EstablecerError(PosicionActual + n, "Uso de una palabra reservada en la definición del token.");
                                     }
-                                    else if (ListaConjuntos.Contains(palabra))
+                                    else if (ListaConjuntos.Contains(palabra.ToLower()))
                                     {
                                         valor = true;
                                         NuevaDefinicion = n + palabra.Length;
